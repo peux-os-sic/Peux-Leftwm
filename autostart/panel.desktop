@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Panel
+Comment=Panel
+Categories=GNOME;GTK;Utility;
+Exec=/usr/local/bin/launch.sh
+MimeType=text/uri-list;x-scheme-handler/variety;x-scheme-handler/vrty;
+Icon=panel
+Terminal=false
+Type=Application
+StartupNotify=false
+Actions=Next;Previous;PauseResume;History;Preferences;
+Keywords=Menu;Panel;Application;
+X-GNOME-Autostart-Delay=20
+StartupWMClass=Panel

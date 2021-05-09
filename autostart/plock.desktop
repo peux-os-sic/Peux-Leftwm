@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=plock
+Comment=i3lock with modifications
+Exec=xautolock -time 5 -locker ~/.config/system_scripts/session_lock
+RunHook=0
+StartupNotify=false
+Terminal=false
+Hidden=false
