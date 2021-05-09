@@ -51,6 +51,8 @@ if zenity --question --text="Want to copy the configurations?"
 then 
     echo "changing directory"
     cd ../
+    sudo -S cp -r Peux-Leftwm/pkill_bc /usr/local/bin/
+    sudo -S cp -r Peux-Leftwm/launch.sh /usr/local/bin/
     cp -r Peux-Leftwm/*/ $HOME/.config/
     notify-send "Copied the configurations"
 else
