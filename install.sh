@@ -27,6 +27,8 @@ then
             notify-send "Polybar is already installed. Skipping!"
         else
             echo -e $PASSWD | sudo -S pacman -U /tmp/fetcher/Peux-Leftwm/polybar-3.5.5-2-x86_64.pkg.tar.zst
+            # install font dependency
+            echo -e $PASSWD | sudo -S pacman -S ttf-font-awesome
             notify-send "installed Polybar"
         fi
     fi
@@ -51,7 +53,7 @@ if zenity --question --text="Want to copy the configurations?"
 then 
     echo "changing directory"
     cd ../
-    
+
     PASSWD="$(zenity --password --title=Authentication)\n"
 
     echo -e $PASSWD | sudo -S cp -r Peux-Leftwm/pkill_bc /usr/local/bin/
