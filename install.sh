@@ -31,6 +31,7 @@ then
             echo -e $PASSWD | sudo -S pacman -S ttf-font-awesome
             echo -e $PASSWD | sudo -S pacman -S acpi
             echo -e $PASSWD | sudo -S pacman -S i3lock
+            echo -e $PASSWD | sudo -S pacman -S feh
             notify-send "installed Polybar"
         fi
     fi
