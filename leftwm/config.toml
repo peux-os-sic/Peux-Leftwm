@@ -45,7 +45,7 @@ key = "m"
 ##############################
 [[keybind]]
 command = "Execute"
-value = "launch.sh"
+value = "leftPol.sh"
 modifier = ["modkey"]
 key = "p"
 
