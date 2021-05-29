@@ -32,6 +32,7 @@ then
             echo -e $PASSWD | sudo -S pacman -S acpi
             echo -e $PASSWD | sudo -S pacman -S i3lock
             echo -e $PASSWD | sudo -S pacman -S feh
+            echo -e $PASSWD | sudo -S pacman -S picom
             notify-send "installed Polybar"
         fi
     fi
