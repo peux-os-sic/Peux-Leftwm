@@ -28,11 +28,7 @@ then
         else
             echo -e $PASSWD | sudo -S pacman -U /tmp/fetcher/Peux-Leftwm/polybar-3.5.5-2-x86_64.pkg.tar.zst
             # install font dependency
-            echo -e $PASSWD | sudo -S pacman -S ttf-font-awesome
-            echo -e $PASSWD | sudo -S pacman -S acpi
-            echo -e $PASSWD | sudo -S pacman -S i3lock
-            echo -e $PASSWD | sudo -S pacman -S feh
-            echo -e $PASSWD | sudo -S pacman -S picom
+            echo -e $PASSWD | sudo -S pacman -S ttf-font-awesome acpi i3lock feh picom
             notify-send "installed Polybar"
         fi
     fi
