@@ -2,7 +2,7 @@
 Name=Panel
 Comment=Panel
 Categories=GNOME;GTK;Utility;
-Exec=/usr/local/bin/launch.sh
+Exec=/usr/local/bin/leftPol.sh
 MimeType=text/uri-list;x-scheme-handler/variety;x-scheme-handler/vrty;
 Icon=panel
 Terminal=false

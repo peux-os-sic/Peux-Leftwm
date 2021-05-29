@@ -29,6 +29,8 @@ then
             echo -e $PASSWD | sudo -S pacman -U /tmp/fetcher/Peux-Leftwm/polybar-3.5.5-2-x86_64.pkg.tar.zst
             # install font dependency
             echo -e $PASSWD | sudo -S pacman -S ttf-font-awesome
+            echo -e $PASSWD | sudo -S pacman -S acpi
+            echo -e $PASSWD | sudo -S pacman -S i3lock
             notify-send "installed Polybar"
         fi
     fi
@@ -57,7 +59,7 @@ then
     PASSWD="$(zenity --password --title=Authentication)\n"
 
     echo -e $PASSWD | sudo -S cp -r Peux-Leftwm/pkill_bc /usr/local/bin/
-    echo -e $PASSWD | sudo -S cp -r Peux-Leftwm/launch.sh /usr/local/bin/
+    echo -e $PASSWD | sudo -S cp -r Peux-Leftwm/leftPol.sh /usr/local/bin/
     cp -r Peux-Leftwm/*/ $HOME/.config/
     notify-send "Copied the configurations"
 else
