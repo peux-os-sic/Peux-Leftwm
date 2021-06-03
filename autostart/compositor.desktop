@@ -1,11 +1,9 @@
 [Desktop Entry]
-Encoding=UTF-8
-Type=Application
-Name=compositor
 Comment=picom compositor
-Exec=picom -b --config ~/.config/picom/picom.conf --experimental-backends
+Encoding=UTF-8
+Exec=/bin/bash -c "sleep 0.5 && picom -b --config ~/.config/picom/picom.conf --experimental-backends"
+Name=compositor
 RunHook=0
 StartupNotify=false
 Terminal=false
-Hidden=false
-
+Type=Application
